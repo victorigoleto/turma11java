@@ -1,0 +1,240 @@
+/*===== Fontes do Google =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* -- (os dois traços cria de certo modo uma variavel, que vai ser chamada em outro 
+parametro */
+
+/*===== Configurações Gerais =====*/
+:root{
+  --header-height: 50px;
+  --font-semi: 600;
+  --big-font-size: 56px;
+  --h2-font-size: 32px;
+  --normal-font-size: 16px;
+
+}
+
+/*Cores Gerais*/
+:root{
+  --first-color: #f21495;
+  --second-color: #000000;
+}
+
+/*Fontes*/
+:root{
+  --body-font: 'Poppins', sans-serif;
+}
+
+
+/*Espaçamento do Menu*/
+:root{
+  --mb-1: 10px;
+  --mb-2: 10px;
+  --mb-3: 10px;
+  --mb-4: 10px;
+  --mb-5: 10px;
+  --mb-6: 10px;
+}
+
+/*Fixar o menu*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*Configurações de fonte da body*/
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+
+/*Configurações dos titulos*/
+h1,h2,p{
+  margin: 0;
+}
+
+/*Configurações de fonte da body*/
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Links*/
+a{
+  text-decoration: none;
+}
+
+/*Imagem*/
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/*===== Layout =====*/
+.bd-grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 32px;
+  width: calc(100% - 32px);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+}
+
+/*===== Navegação =====*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+}
+
+.nav__list{
+  display: flex;
+  padding-top: 0;
+}
+.nav__item{
+  margin-bottom: var(--mb-4);
+  margin-left: var(--mb-6);
+}
+.nav__link{
+  position: relative;
+  color: #fff;
+  color: var(--second-color);
+}
+.nav__link:hover{
+  position: relative;
+}
+.nav__link:hover::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 8px;
+  left: 0;
+  top: 32px;
+  background-color: var(--first-color);
+  
+}
+.nav__logo{
+  color: var(--second-color);
+}
+.nav__toggle{
+  color: var(--second-color);
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/*===== Index =====*/
+.home{
+  height: 700px;
+}
+
+.home__title{
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+}
+.home__title-color{
+  color: var(--first-color);
+}
+
+.home__img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 295px;
+}
+
+/*Botões*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 12px 40px;
+  font-weight: var(--font-semi);
+  border-radius: 8px;
+}
+.button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  background-color: #993399;
+}
+
+/* ===== Contato =====*/
+.contact__input{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 16px;
+  border-radius: .8px;
+  border: 24px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+.contact__button{
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.contact__form{
+  width: 360px;
+}
+.contact__container{
+  justify-items: center;
+}
+
+/* ===== Rodapé =====*/
+.footer{
+  background-color: var(--second-color);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 32px;
+}
+.footer__title{
+  font-size: 32px;
+  margin-bottom: var(--mb-4);
+}
+.footer__social{
+  margin-bottom: var(--mb-4);
+}
+.footer__icon{
+  font-size: 18px;
+  color: #fff;
+  margin: 0 var(--mb-2)
+}
+
+/* ===== Outros=====*/
+.home__img{
+  width: 457px;
+  bottom: 15%;
+}
+
+.home__img{
+  right: 10%;
+}
+
+

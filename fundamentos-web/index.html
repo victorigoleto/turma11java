@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <ul id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-    <h1>Teste</h1>
-    <div class="container">
-        <div class="p-30">
-            <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsum, soluta natus est voluptatum ullam, aspernatur illo rem necessitatibus ipsa blanditiis impedit eveniet eos consequatur nulla totam nobis deleniti at.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Victor Rigoleto</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        
+        <!-- Cabeçalho -->
+        <div class="header">
+            <div class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Victor Rigoleto</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Sobre mim</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Jobs</a></li>
+                        <li class="nav__item"><a href="contato.html" class="nav__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img class="br-50 wh-300 p-30" src="assets/img/maxresdefault.jpg" alt="EU SOU NAL DO CAAAAANAAAAL">
-        </div>
-    </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title"><br><p>Olá,</p>Eu sou o <p class="home__title-color">Victor Rigoleto</p> Desenvolvedor <p>FullStack Jr</p></h1>
 
-    <h2 class="center">Meu Video</h2>
-    <div class="container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rwiT5FK5zJQ" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-    </div>
+                    <a href="contato.html" class="button">Contato</a>
+                </div>
 
-    <footer>
-        <div class="container">
-            <a href="https://www.linkedin.com/in/victor-rigoleto-b707b5154/" target="_blank">
-                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
-            </a>
+               <div></div>
 
-            <a href="https://www.instagram.com/victorigoletto/" target="_blank">
-                <img class="tm-social p-30"src="assets/img/instagram.png" alt="Logo do Insgtagram">
-            </a>
-        </div>
+                <div class="home__img">    
+                    <img src="assets/img/fotoHome.png" alt="">
+                </div>
+            </section>
 
-        <p class="center">
-            Todos os direitos reservados a Victor Rigoleto &copy;
-        </p>
-    </footer>
-</body>
+        <!-- Rodapé-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <footer class="footer">
+            <p class="footer__title">Victor Rigoleto</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p>&#169; Todos os direitos reservados</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
